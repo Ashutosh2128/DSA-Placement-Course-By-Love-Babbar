@@ -597,7 +597,7 @@ int main() {
 
 
 
-
+    //Dabangg Home Work Pattern
     int n;
     cin >> n;
 
@@ -621,6 +621,7 @@ int main() {
             k = k + 1;
         }
 
+        //right star
         int l = 0;
 
         while(l <= i-1) {
@@ -628,6 +629,7 @@ int main() {
             l = l + 1;
         }
 
+        //right numbers
         int m = 1;
         int cnt = n-i;
 
@@ -640,6 +642,7 @@ int main() {
         cout << endl;
         i = i + 1;
     }
+    //Dabangg Home Work Pattern Completed Successfully🎉🎉🎉
 
 
     
