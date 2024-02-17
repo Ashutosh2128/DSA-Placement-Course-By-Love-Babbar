@@ -54,7 +54,7 @@ int main() {
     unsigned long long int i = 0, ans = 0;
 
     if(n < 0) {
-        n = pow(4, 16) + n;
+        n = pow(2, 16) + n;
     }
 
     cout << n << endl;
