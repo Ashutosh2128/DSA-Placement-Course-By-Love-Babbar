@@ -16,7 +16,6 @@ int main() {
 
     cout << "number n is " << n << endl;
 
-
     return 0;
 }
 
