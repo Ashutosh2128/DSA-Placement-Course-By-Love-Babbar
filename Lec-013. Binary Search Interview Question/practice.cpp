@@ -2,7 +2,7 @@
 using namespace std;
 
 //first ans last occurence in an array
-int lastOcc(int arr[], int n, int key) {
+int firstOcc(int arr[], int n, int key) {
     int s = 0, e = n-1;
 
     int mid = s + (e-s)/2;
@@ -11,7 +11,7 @@ int lastOcc(int arr[], int n, int key) {
     while(s <= e) {
         if(key == arr[mid]) {
             ans = mid;
-            s = mid + 1;
+            e = mid - 1;
         }
         else if(key > arr[mid]) {
             s = mid + 1;
@@ -26,7 +26,7 @@ int lastOcc(int arr[], int n, int key) {
     return ans;
 }
 
-int firstOcc(int arr[], int n, int key) {
+int lastOcc(int arr[], int n, int key) {
     int s = 0, e = n-1;
 
     int mid = s + (e-s)/2;
@@ -35,7 +35,7 @@ int firstOcc(int arr[], int n, int key) {
     while(s <= e) {
         if(key == arr[mid]) {
             ans = mid;
-            e = mid - 1;
+            s = mid + 1;
         }
         else if(key > arr[mid]) {
             s = mid + 1;
